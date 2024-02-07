@@ -1,0 +1,110 @@
+/* styles.css */
+
+body {
+  background: linear-gradient(#9dc5cb, #39636b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.model-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #32545a;
+}
+
+.start-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#label-container {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%);
+  background: linear-gradient(#79b0b7, #457b84);
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+#webcam-container {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+}
+
+video {
+  max-width: 100%; /* Hacer el video responsive */
+}
+
+@media screen and (max-width: 768px) {
+  .model-title {
+    font-size: 18px;
+  }
+
+  #webcam-container {
+    height: 70vh;
+  }
+
+  video {
+    max-width: 100%;
+  }
+
+  #label-container {
+    font-size: 14px;
+    width: 70%;
+  }
+}
+
+
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(#9dc5cb, #39636b);
+}
+
+.home-content {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.start-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #45a049;
+}
+
+.corner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px; /* Ajusta el ancho según tus necesidades */
+  height: 100px; /* Ajusta la altura según tus necesidades */
+}
